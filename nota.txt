@@ -1,0 +1,5 @@
+para que los diseños de css este funcionando a la perfeccion se necesita lo siguiente 3 pasos:
+
+1. necesitamos verificar que los links tenga un type"text/css" y continua con lo que trae la etiqueta
+2. que los botones a que redirigena otra pagina tenga las direcciones adecuada.
+3.que las demas paginas cumplan con el paso 1 y 2.
