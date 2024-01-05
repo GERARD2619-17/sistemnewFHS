@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('password').value;
 
         try {
-            const response = await fetch('https://57b5-190-242-151-88.ngrok-free.app/api/auth/local', {
+            const response = await fetch('https://cfab-190-242-151-88.ngrok-free.app/api/auth/local', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
