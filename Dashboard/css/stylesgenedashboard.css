@@ -54,7 +54,7 @@ body {
     overflow: hidden;
 }
 
-/* verifica de nuevo en el video por que no esta siendo verificado esta seccion */
+
 .navigation.active {
     width: 80px;
 }
@@ -121,7 +121,7 @@ body {
     white-space: nowrap;
 }
 
-/* curva en la parte que se seleccione*/
+
 
 .navigation ul li:hover a::before,
 .navigation ul li.hovered a::before {
@@ -151,7 +151,7 @@ body {
     pointer-events: none;
 }
 
-/*fin de la curva*/
+
 /* main */
 .main {
     position: absolute;
@@ -172,13 +172,13 @@ body {
 
 }
 
-/*seccion para activar el main que hemos declarado en la parte de arriba que viene siendo parte del cuerpo de nuestro sistema*/
+
 .main.active {
     width: calc(100% - 80px);
     left: 80px;
 }
 
-/* esto es mi barra superior aunque es mas conocida como navbar*/
+
 .topbar {
     width: 100%;
     height: 60px;
@@ -188,7 +188,7 @@ body {
     padding: 0 10px;
 }
 
-/* viene siendo el que hace que mi barra de navegacion que esta en vertical se pueda reducir a x tamano*/
+
 .toggle {
     position: relative;
     width: 60px;
@@ -301,9 +301,8 @@ body {
     color: var(--white);
 }
 
-/*fin de el diseno de mi dashboard*/
-/*---------------------------------------------------------------*/
-/*parte de responsividad en mi dashboard*/
+
+
 @media (max-width: 991px) {
     .navigation {
         left: -300px;
@@ -393,13 +392,9 @@ body {
     }
 }
 
-/*fin de la parte resposiva de mi dashboard*/
+
 /*body players*/
-/*seccion para darle estilo al cuerpo de mi formulario 
-establece algunas propiedades generales para el cuerpo de la pagina
-define la fuente, elimina los margenes y rellenos predeterminados, y al mismo tiempo
-utiliza flexbox para centrar los elementos tanto horizontal como verticalmente, oculta el desbordamiento
-y establece la altura al 100% de vantana y por eso usamos el 100vh*/
+
 .body-players {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
@@ -472,7 +467,7 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Estilo para el botón */
+
 #miBoton {
     margin-top: 10.5px;
     margin-left: 1.4%;
@@ -497,9 +492,7 @@ input[type="submit"]:hover {
 
 
 
-/*find del body-players*/
-/*inicio de responsividad de mi formulario*/
-/*responsividad del formulario*/
+
 @media only screen and (max-width: 600px) {
 
     /* Estilos para pantallas pequeñas, como celulares */
@@ -523,8 +516,7 @@ input[type="submit"]:hover {
 }
 
 
-/*FIN Estilo para los botones de envío y hover*/
-/********************************************/
+
 /*inicio de la seccion de mi tabla lista de jugadores*/
 body-listplayer {
     min-height: 100vh;
@@ -827,8 +819,7 @@ tbody td.active {
     width: 2rem;
     height: auto;
 }
-/*responsive*/
-/* Estilos base para pantallas pequeñas */
+
 @media only screen and (min-width: 480px) and (max-width: 1080px) {
     .table__header .input-group {
         width: 45%;
@@ -881,13 +872,8 @@ tbody td.active {
         height: 4rem;
     }
  }
- /*fin de todo el bloque de tabla players junto con
- la resposividad*/
-
-/*--------------------------------------------*/
 /*MODAL formulario*/
-/*parte de modal agregado en el readeplayer*/
-/*----------------------------------------------*/
+
 #playerModal {
     display: flex;
     align-items: center;
@@ -954,8 +940,7 @@ tbody td.active {
     top: 0;
     justify-content: center;
 }
-/*seccio de responsividad*/
-/* Estilos base para pantallas pequeñas */
+
 @media only screen and (min-width: 480px) and (max-width: 1080px) {
   .modalcontent{
     width: 75%;
@@ -963,7 +948,7 @@ tbody td.active {
   }
  }
  
- /* Estilos para pantallas medianas */
+
  @media only screen and (min-width: 600px)  and (max-width: 1080px) {
     .modalcontent{
         width: 50%;
@@ -971,14 +956,14 @@ tbody td.active {
       }
  }
  
- /* Estilos para pantallas grandes */
+
  @media only screen  and (min-width: 1024px) {
     .modalcontent{
         width: 35%;
         margin-top: 1.85%;
       }
  }
- /*adicionando mas responsividad por si a acaso salen pantallas de este tamaño*/
+ 
  
  @media only screen  and (min-width: 700px){
     .modalcontent{
@@ -993,5 +978,4 @@ tbody td.active {
       }
  }
 
-/*fin de la parte de modal formulario
-/*----------------------------------------------------------------*/
+
