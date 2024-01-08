@@ -51,10 +51,12 @@ const CACHE_NAME = 'FESAHOCKEYWEB',
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
+  // @ts-ignore
   e.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
         return cache.addAll(urlsToCache)
+          // @ts-ignore
           .then(() => self.skipWaiting())
       })
       .catch(err => console.log('Falló registro de cache', err))
@@ -65,6 +67,7 @@ self.addEventListener('install', e => {
 self.addEventListener('activate', e => {
   const cacheWhitelist = [CACHE_NAME]
 
+  // @ts-ignore
   e.waitUntil(
     caches.keys()
       .then(cacheNames => {
@@ -78,6 +81,7 @@ self.addEventListener('activate', e => {
         )
       })
       // Le indica al SW activar el cache actual
+      // @ts-ignore
       .then(() => self.clients.claim())
   )
 })
@@ -85,7 +89,9 @@ self.addEventListener('activate', e => {
 //cuando el navegador recupera una url
 self.addEventListener('fetch', e => {
   //Responder ya sea con el objeto en caché o continuar y buscar la url real
+  // @ts-ignore
   e.respondWith(
+    // @ts-ignore
     caches.match(e.request)
       .then(res => {
         if (res) {
@@ -93,6 +99,7 @@ self.addEventListener('fetch', e => {
           return res
         }
         //recuperar de la petición a la url
+        // @ts-ignore
         return fetch(e.request)
       })
   )
