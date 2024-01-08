@@ -11,7 +11,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!--PWA-->
-<link rel="manifest" href="./PaginaUsuario/manifest.json"> 
+<link rel="manifest" href="/manifest.json"> 
 <!---PWA--->
 
 <!----METAS DE PWA-->
@@ -36,7 +36,7 @@
 <body>
 
      <!--extencion para pwa-->
-     <script src="regist_serviceWorker.js"></script> "./PaginaUsuario/regist_serviceWorker.js"
+     <script src="regist_serviceWorker.js"></script> 
      <script>
        $(function(){
      //Precarga de la pagina se ejecuta solo una vez
@@ -48,7 +48,7 @@
       });
  
       if ('serviceWorker' in navigator) {
-         navigator.serviceWorker.register('regist_serviceWorker.js')
+         navigator.serviceWorker.register('Service_Worker.js')
              .then(function(reg) {
                  console.log('Service worker registrado.');
              })
