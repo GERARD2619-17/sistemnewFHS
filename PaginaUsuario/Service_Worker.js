@@ -3,6 +3,7 @@ const CACHE_NAME = 'FESAHOCKEYWEB',
   urlsToCache = [
     './',
     './index.html',
+    './home.html',
     './sobrenosotros.html',
     './nuestrosatletas.html',
     './ligaestudiantil.html',
